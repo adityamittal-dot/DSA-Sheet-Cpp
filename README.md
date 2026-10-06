@@ -8,6 +8,8 @@ A free, self-contained 12-week DSA (Data Structures & Algorithms) mastery tracke
 
 - **12-week roadmap, 291 tracked problems** — split into 4 phases (Arrays/Hashing/Binary Search → Recursion/Linked Lists/Stacks → Trees/Graphs → Dynamic Programming), each week with a goal, a "Watch" list (specific YouTube playlists and video ranges — Striver, Aditya Verma, William Fiset, etc.) and a "Read" list (CP-Algorithms, USACO Guide, GeeksforGeeks, not raw cppreference).
 - **6-week Codeforces track, 209 problems** — a separate section, topic by topic (implementation/math/constructive → greedy, sorting, two pointers → binary search, number theory, bitmasks → STL data structures & DFS/BFS → trees, shortest paths, DSU → DP). Problems are pulled from the Codeforces problemset by tag, climbing from 800 to 1900 rating, most-solved first in each rating band — classics plus volume. Each week has a goal, reading links (USACO Guide, CP-Algorithms), and its own progress bar.
+- **12-week Codeforces track, 423 problems** — a separate section, topic by topic: implementation → math & constructive → sorting & greedy → two pointers, prefix sums & strings → binary search → number theory & combinatorics → bitmasks → STL data structures → DFS/BFS → trees → shortest paths, DSU & topo sort → DP. Problems come from the Codeforces problemset by tag, climbing from 800 to 2000 rating, most-solved first in each rating band — classics plus volume. Each week has a goal and reading links (USACO Guide, CP-Algorithms).
+- **Separate Codeforces tracker** — its own progress bar, solved-by-rating breakdown, a 12-week tile grid that jumps to each week, and **Sync from Codeforces**: enter your handle and every sheet problem you've got Accepted on is ticked automatically via the public Codeforces API.
 - **Per-problem notes** — click the note icon next to any problem to expand a small textarea; what you type is saved automatically as you type.
 - **45-day learncpp.com calendar** — all 313 lessons across all 28 chapters of [learncpp.com](https://www.learncpp.com/), split day-by-day (chapter-boundary aware) starting from the day you open the sheet, as a check-the-box calendar.
 - **freeCodeCamp video cross-reference** — days whose topic overlaps freeCodeCamp's ["C++ Programming Course – Beginner to Advanced"](https://www.youtube.com/watch?v=8jLOx1hD3_o) also show a "Watch" link that jumps straight to the matching chapter's real timestamp in the video.
@@ -30,6 +32,7 @@ The whole tracker is one file, `index.html`, with three parts:
 - HTML/CSS for the layout and the design tokens (`:root` variables — swap colors here for your own theme).
 - A `DATA` array (the 12 weeks — title, goal, resources, problem list per week).
 - A `CFDATA` array (the 6 Codeforces weeks — sections of `[id, name, rating]`).
+- A `CFDATA` array (the 12 Codeforces weeks — sections of `[id, name, rating]`).
 - A `CPPDAYS` array (the 45-day learncpp.com + video calendar).
 
 Edit either array directly to change the roadmap, add/remove problems, or adjust the calendar — everything else (rendering, checkboxes, notes, progress bars) reads from those arrays.
